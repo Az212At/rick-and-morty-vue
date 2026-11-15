@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  base: "/rick-and-morty/",
+  base: "/rick-and-morty-vue/",
   plugins: [vue()],
   resolve: {
     alias: {
