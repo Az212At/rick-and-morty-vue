@@ -1,0 +1,60 @@
+{
+  "name": "rick-and-morty",
+  "version": "0.0.1",
+  "author": "Idiyatov Azat",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn type-check && vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "type-check": "vue-tsc --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "stylelint": "stylelint \"src/**/*.css\"",
+    "stylelint:fix": "yarn stylelint --fix",
+    "deploy": "sh deploy.sh"
+  },
+  "dependencies": {
+    "vue": "^3.5.45",
+    "vue-router": "^4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@testing-library/vue": "^8.1.0",
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "@vue/compiler-dom": "^3.5.45",
+    "@vue/test-utils": "^2.6.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-vue": "^10.12.1",
+    "globals": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.3",
+    "vitest": "^3.2.4",
+    "vue-eslint-parser": "^10.4.2",
+    "vue-tsc": "^3.3.14"
+  }
+}
